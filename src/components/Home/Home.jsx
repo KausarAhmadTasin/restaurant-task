@@ -1,9 +1,18 @@
+import Banner from "../Banner/Banner";
 import Navbar from "../Navbar/Navbar";
 
 const Home = () => {
   return (
-    <div>
+    <div className="relative">
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('pizza-bg.png')",
+          zIndex: 1,
+        }}
+      />
       <Navbar />
+      <Banner />
     </div>
   );
 };

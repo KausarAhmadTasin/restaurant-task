@@ -1,3 +1,5 @@
+import Button from "../shared/Button/Button";
+
 const Navbar = () => {
   const navLinks = [
     {
@@ -34,6 +36,7 @@ const Navbar = () => {
             <span className="font-semibold">Restau</span>rant
           </h2>
         </div>
+        <img src="pizza.png" className="h-7" alt="" />
         <div>
           <ul className="flex items-center gap-x-10 font-medium text-base">
             {navLinks.map((navLink) => (
@@ -42,9 +45,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div>
-          <button className="bg-Yellow px-6 py-[0.625rem] text-text-primary font-bold active:scale-95">
-            BOOK A TABLE
-          </button>
+          <Button>BOOK A TABLE</Button>
         </div>
       </nav>
     </div>
