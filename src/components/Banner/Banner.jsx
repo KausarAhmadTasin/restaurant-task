@@ -6,13 +6,13 @@ const Banner = () => {
       <div className="container mx-auto  flex items-center justify-between px-8">
         {/* Left Section: Text Content */}
         <div className="text-left relative">
-          <div className="absolute p-10 w-[70rem] bg-gradient-to-r from-transparent to-Red/50 z-20 -top-8 -left-12 font-bold text-[7.5rem]">
-            <h1 className="text-white font-bebas tracking-tight text-[5.5rem] mb-4 scale-y-[1.45] leading-[6.325rem]">
-              TASTE THE AUTHENTIC SAUDI CUISINE
+          <div className="absolute pt-5 w-[53rem] bg-gradient-to-r from-transparent to-Red/50 z-20 -top-8 -left-12]">
+            <h1 className="text-white font-bebas text-[7.5rem] mb-4 leading-[8.125rem]">
+              TASTE THE AUTHENTIC <br /> SAUDI CUISINE
             </h1>
           </div>
 
-          <div className="relative z-30 mt-72 font-roboto">
+          <div className="relative mt-72 font-roboto">
             <p className="text-white text-2xl mb-8">
               Among the best Saudi chefs in the world, serving you something
               beyond flavor.
@@ -51,10 +51,10 @@ const Banner = () => {
             alt="Delicious Saudi Cuisine"
           />
 
-          <div className="absolute bottom-1 -right-14 flex items-center justify-center">
-            <div className="w-44 h-44 bg-yellow-500 rounded-full flex items-center justify-center">
-              <div className="w-40 h-40 border-4 border-dashed border-Red rounded-full flex items-center justify-center">
-                <p className="text-4xl font-bebas tracking-tighter font-bold text-center">
+          <div className="absolute bottom-1 -right-10 flex items-center justify-center">
+            <div className="w-[7.5rem] h-[7.5rem] bg-Yellow rounded-full flex items-center justify-center">
+              <div className="w-[6.5625rem] h-[6.5625rem] border-2 border-dashed border-Red rounded-full flex items-center justify-center">
+                <p className="text-4xl mt-2 font-bebas  text-center leading-9">
                   TODAY <br />
                   OFFER
                 </p>
