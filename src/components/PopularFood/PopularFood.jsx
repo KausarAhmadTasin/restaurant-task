@@ -1,34 +1,8 @@
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-
-// Custom navigation button component
-const NavigationButton = ({ direction }) => {
-  const swiper = useSwiper();
-
-  const handleClick = () => {
-    direction === "prev" ? swiper.slidePrev() : swiper.slideNext();
-  };
-
-  return (
-    <button
-      onClick={handleClick}
-      className={`absolute top-0 ${
-        direction === "prev" ? "right-28" : "right-6"
-      } 
-        bg-white hover:text-Red z-30 p-4 rounded-full shadow-lg 
-        transition`}
-    >
-      {direction === "prev" ? (
-        <IoIosArrowBack className="text-3xl" />
-      ) : (
-        <IoIosArrowForward className="text-3xl" />
-      )}
-    </button>
-  );
-};
 
 // Slider Data
 const sliderItems = [
@@ -64,6 +38,32 @@ const sliderItems = [
   },
 ];
 
+// Custom navigation button component
+const NavigationButton = ({ direction }) => {
+  const swiper = useSwiper();
+
+  const handleClick = () => {
+    direction === "prev" ? swiper.slidePrev() : swiper.slideNext();
+  };
+
+  return (
+    <button
+      onClick={handleClick}
+      className={`absolute top-0 ${
+        direction === "prev" ? "right-28" : "right-6"
+      } 
+        bg-white hover:text-Red z-30 p-4 rounded-full shadow-lg 
+        transition`}
+    >
+      {direction === "prev" ? (
+        <IoIosArrowBack className="text-3xl" />
+      ) : (
+        <IoIosArrowForward className="text-3xl" />
+      )}
+    </button>
+  );
+};
+
 const PopularFood = () => {
   return (
     <div className="relative w-full bg-[#FBF7F2] py-32">
@@ -80,7 +80,11 @@ const PopularFood = () => {
             slidesPerView={4}
             spaceBetween={32}
             loop={true}
-            modules={[Navigation]}
+            autoplay={{
+              delay: 1500,
+              disableOnInteraction: false,
+            }}
+            modules={[Autoplay, Navigation]}
             className="mySwiper mt-2"
           >
             {/* Custom Navigation Buttons */}

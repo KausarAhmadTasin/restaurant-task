@@ -1,0 +1,22 @@
+/* Hide default date icon and add a custom one */
+.custom-date-icon::-webkit-calendar-picker-indicator {
+  opacity: 0; /* Hide default icon */
+  background: url("https://example.com/white-calendar-icon.png") no-repeat;
+  background-size: 1em; /* Adjust size of the icon */
+  color: white;
+}
+.custom-date-icon {
+  position: relative;
+}
+.custom-date-icon::after {
+  content: "";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url("https://example.com/white-calendar-icon.png") no-repeat;
+  background-size: 1.2em;
+  width: 1.2em;
+  height: 1.2em;
+  pointer-events: none;
+}
