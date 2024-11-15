@@ -47,8 +47,4 @@ This project is a modern, responsive restaurant website layout built with React 
 - **React**: For building the user interface and component structure.
 - **Tailwind CSS**: For styling and ensuring a responsive design with utility-first classes.
 - **JavaScript/JSX**: For component logic and interactivity.
-
-## Installation & Usage
-1. Clone the repository.
-   ```bash
-   git clone https://github.com/yourusername/restaurant-website.git
+s
