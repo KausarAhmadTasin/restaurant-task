@@ -110,8 +110,8 @@ const About = () => {
         </div>
       </div>
       {/* Bottom Section */}
-      <div className="flex flex-col gap-y-4 lg:flex-row lg:items-center mx-4 mt-[4.625rem] mb-20 ">
-        <div className="flex items-center flex-grow gap-x-4">
+      <div className="flex flex-col gap-y-4 lg:flex-row gap-x-16 lg:items-center lg:justify-evenly lg:mx-auto mx-4 mt-[4.625rem] mb-20 ">
+        <div className="flex items-center  gap-x-4">
           <div className="bg-white w-[5.625rem] rounded-full p-6 shadow-md">
             <img className="" src="package.svg" alt="" />
           </div>
@@ -122,7 +122,7 @@ const About = () => {
             <p className="lg:text-xl text-lg font-inter">Within 30 minutes</p>
           </div>
         </div>
-        <div className="flex items-center flex-grow gap-x-4">
+        <div className="flex items-center   gap-x-4">
           <div className="bg-white w-[5.625rem] rounded-full p-6 shadow-md">
             <img className="" src="medal.svg" alt="" />
           </div>
@@ -135,7 +135,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-center flex-grow gap-x-4">
+        <div className="flex items-center  gap-x-4">
           <div className="bg-white w-[5.625rem] rounded-full p-6 shadow-md">
             <img className="" src="bag.svg" alt="" />
           </div>

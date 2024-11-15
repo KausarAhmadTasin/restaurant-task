@@ -13,7 +13,7 @@ const Banner = () => {
           </div>
 
           <div className="relative lg:mt-72 mt-28 font-roboto">
-            <p className="text-white text-2xl mb-8">
+            <p className="text-white text-2xl w-3/4 mb-8">
               Among the best Saudi chefs in the world, serving you something
               beyond flavor.
             </p>

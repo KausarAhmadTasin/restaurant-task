@@ -38,22 +38,26 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full top-0 z-30 bg-Red px-4 py-8 text-white">
+    <div className="fixed w-full top-0 z-40 bg-Red px-4 py-8 text-white">
       <nav className="container z-40 mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-x-[0.375rem]">
-          <img className="h-[2.3125rem]" src="logo.svg" alt="" />
-          <h2 className="text-[1.77775rem]">
-            <span className="font-semibold font-poppins">Restau</span>rant
-          </h2>
-        </div>
-        <img src="pizza.png" className="h-7" alt="" />
-        {/* Desctop Links */}
-        <div>
-          <ul className="md:flex hidden items-center gap-x-10 font-medium text-base">
-            {navLinks.map((navLink) => (
-              <li key={navLink.path}>{navLink.title}</li>
-            ))}
-          </ul>
+        <div className="flex items-center gap-x-16">
+          {" "}
+          {/* Logo */}
+          <div className="flex items-center gap-x-[0.375rem]">
+            <img className="h-[2.3125rem]" src="logo.svg" alt="" />
+            <h2 className="text-[1.77775rem]">
+              <span className="font-semibold font-poppins">Restau</span>rant
+            </h2>
+          </div>
+          <img src="pizza.png" className="h-7" alt="" />
+          {/* Desctop Links */}
+          <div>
+            <ul className="md:flex hidden items-center gap-x-10 font-medium text-base">
+              {navLinks.map((navLink) => (
+                <li key={navLink.path}>{navLink.title}</li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         {/* Mobile Drawer */}

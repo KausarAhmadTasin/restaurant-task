@@ -4,13 +4,13 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <div
-      className="lg:w-full relative  h-screen lg:min-h-screen bg-cover bg-center bg-[url('/restaurant-interior.jpg')] text-white py-16"
+      className="lg:w-full relative h-[53rem] lg:h-screen bg-cover bg-center bg-[url('/restaurant-interior.jpg')] text-white py-16"
       style={{
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="bg-black lg:pt-16 pt-4 absolute top-0 right-0 font-bebas bg-opacity-80 w-full lg:min-h-screen flex flex-col items-center px-4">
+      <div className="bg-black lg:pt-20 pt-10 absolute top-0 right-0 font-bebas bg-opacity-80 w-full h-[53rem] lg:h-screen flex justify-between flex-col items-center px-4">
         {/* Main Title */}
         <h2 className="lg:text-[3.875rem] text-4xl lg:mb-8 text-center">
           WE ARE READY TO HAVE YOU THE BEST DINING EXPERIENCES
