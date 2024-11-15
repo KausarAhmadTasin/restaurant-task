@@ -1,5 +1,6 @@
 import About from "./components/About/About";
 import BookTable from "./components/BookTable/BookTable";
+import CustomersSay from "./components/CustomersSay/CustomersSay";
 import Home from "./components/Home/Home";
 import PopularFood from "./components/PopularFood/PopularFood";
 
@@ -11,6 +12,7 @@ function App() {
         <About />
         <PopularFood />
         <BookTable />
+        <CustomersSay />
       </div>
     </>
   );

@@ -3,6 +3,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import PointTitle from "../shared/PointTitle/PointTitle";
 
 // Slider Data
 const sliderItems = [
@@ -68,12 +69,8 @@ const PopularFood = () => {
   return (
     <div className="relative w-full bg-[#FBF7F2] py-32">
       <div className="container mx-auto">
-        <p className="text-lg font-roboto text-Red font-bold flex items-center">
-          <span className="inline-block w-3 h-3 bg-Red mr-2 rounded-sm"></span>
-          Crispy, Every Bite Taste
-        </p>
         <h1 className="font-bebas text-[3.875rem]">POPULAR FOOD ITEMS</h1>
-
+        <PointTitle>Crispy, Every Bite Taste</PointTitle>
         <div className="relative">
           {/* Swiper with Navigation */}
           <Swiper
