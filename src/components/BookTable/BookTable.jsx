@@ -19,19 +19,21 @@ const BookTable = () => {
 
   return (
     <div className="container mx-auto pt-28">
-      <PointTitle>Book Now</PointTitle>
-      <h1 className="text-[3.875rem] mb-4 font-bebas">BOOK YOUR TABLE</h1>
-      <p className="text-[#F7F8F9] font-roboto">
-        Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo
-        molestie vel, ornare non id blandit netus.
-      </p>
       <div
-        className="h-screen w-full bg-cover"
+        className="h-screen w-full bg-cover bg-center flex items-center justify-center lg:justify-start"
         style={{
           backgroundImage: "url('fork.jpg')",
         }}
       >
-        <div className="max-w-xl p-8 text-white">
+        <div className="max-w-xl p-8 text-white w-full md:w-auto">
+          <PointTitle>Book Now</PointTitle>
+          <h1 className="text-[2.5rem] md:text-[3.875rem] mb-2 font-bebas">
+            BOOK YOUR TABLE
+          </h1>
+          <p className="text-[#F7F8F9] font-roboto mb-10 text-sm md:text-base">
+            Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo
+            molestie vel, ornare non id blandit netus.
+          </p>
           <form
             onSubmit={handleBookingSubmit}
             className="space-y-4 font-roboto"

@@ -67,14 +67,16 @@ const NavigationButton = ({ direction }) => {
 
 const PopularFood = () => {
   return (
-    <div className="relative w-full bg-[#FBF7F2] py-32">
-      <div className="container mx-auto">
-        <h1 className="font-bebas text-[3.875rem]">POPULAR FOOD ITEMS</h1>
+    <div className="relative w-full bg-[#FBF7F2] lg:py-32 py-5">
+      <div className="lg:container lg:mx-auto mx-2">
+        <h1 className="font-bebas text-[2.5rem] lg:text-[3.875rem]">
+          POPULAR FOOD ITEMS
+        </h1>
         <PointTitle>Crispy, Every Bite Taste</PointTitle>
         <div className="relative">
           {/* Swiper with Navigation */}
           <Swiper
-            slidesPerView={4}
+            slidesPerView={1}
             spaceBetween={32}
             loop={true}
             autoplay={{
@@ -83,6 +85,20 @@ const PopularFood = () => {
             }}
             modules={[Autoplay, Navigation]}
             className="mySwiper mt-2"
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 3,
+              },
+              1280: {
+                slidesPerView: 4,
+              },
+            }}
           >
             {/* Custom Navigation Buttons */}
             <NavigationButton direction="prev" />
@@ -91,13 +107,13 @@ const PopularFood = () => {
             {/* Swiper slides */}
             {sliderItems.map((item, index) => (
               <SwiperSlide className="mt-28" key={index}>
-                <div className="bg-white flex flex-col items-center justify-center p-8">
+                <div className="bg-white flex flex-col items-center justify-center lg:p-8 P-6">
                   <img
                     src={item.image}
-                    className="min-h-[8.25rem] flex-grow"
+                    className="lg:min-h-[8.25rem] flex-grow"
                     alt=""
                   />
-                  <div className="border-4 flex-grow border-Red border-b w-16 my-6"></div>
+                  <div className="border-4 flex-grow border-Red border-b lg:w-16 my-6"></div>
                   <h2 className="font-bebas text-2xl flex-grow">{item.name}</h2>
                   <p className="font-inter my-2">{item.description}</p>
                 </div>
@@ -108,7 +124,11 @@ const PopularFood = () => {
       </div>
 
       {/* Side Image */}
-      <img className="absolute bottom-32 left-0" src="capsicum.png" alt="" />
+      <img
+        className="absolute bottom-32 left-0 z-[-10] lg:z-10"
+        src="capsicum.png"
+        alt=""
+      />
     </div>
   );
 };

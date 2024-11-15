@@ -3,16 +3,16 @@ import Button from "../shared/Button/Button";
 const Banner = () => {
   return (
     <div className="bg-pattern bg-Red py-20 pt-44">
-      <div className="container mx-auto  flex items-center justify-between px-8">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-8">
         {/* Left Section: Text Content */}
         <div className="text-left relative">
           <div className="absolute pt-5 w-[53rem] bg-gradient-to-r from-transparent to-Red/50 z-20 -top-8 -left-12]">
-            <h1 className="text-white font-bebas text-[7.5rem] mb-4 leading-[8.125rem]">
+            <h1 className="text-white font-bebas text-5xl lg:text-[7.5rem] mb-4 lg:leading-[8.125rem]">
               TASTE THE AUTHENTIC <br /> SAUDI CUISINE
             </h1>
           </div>
 
-          <div className="relative mt-72 font-roboto">
+          <div className="relative lg:mt-72 mt-28 font-roboto">
             <p className="text-white text-2xl mb-8">
               Among the best Saudi chefs in the world, serving you something
               beyond flavor.
@@ -23,10 +23,10 @@ const Banner = () => {
 
         {/* Right section */}
         <div className="absolute inset-0 opacity-30 rounded-lg"></div>
-        <div className="relative">
+        <div className="relative mt-14 lg:mt-0">
           {/* Background overlay */}
           <div className="absolute inset-0 opacity-30 rounded-lg"></div>
-          <div className="absolute -top-9 -right-7">
+          <div className="absolute -top-9 -right-3 lg:-right-7">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="49"
@@ -47,11 +47,11 @@ const Banner = () => {
           {/* Image */}
           <img
             src="banner-img.png"
-            className="max-h-[40.5625rem] max-w-[43.75rem]"
+            className="lg:max-h-[40.5625rem] lg:max-w-[43.75rem]"
             alt="Delicious Saudi Cuisine"
           />
 
-          <div className="absolute bottom-1 -right-10 flex items-center justify-center">
+          <div className="absolute lg:bottom-1 bottom-4 right-5 lg:-right-10 flex items-center justify-center">
             <div className="w-[7.5rem] h-[7.5rem] bg-Yellow rounded-full flex items-center justify-center">
               <div className="w-[6.5625rem] h-[6.5625rem] border-2 border-dashed border-Red rounded-full flex items-center justify-center">
                 <p className="text-4xl mt-2 font-bebas  text-center leading-9">

@@ -95,7 +95,7 @@ const CustomersSay = () => {
     }
   };
   return (
-    <div className="relative my-32">
+    <div className="relative lg:my-32 my-10 mx-2 lg:mx-0">
       <div className="container mx-auto text-black">
         <PointTitle>Crispy, Every Bite Taste</PointTitle>
         <h1 className="text-[3.875rem] mb-4 font-bebas">
@@ -116,10 +116,10 @@ const CustomersSay = () => {
           {customerFeedbacks.map((customerFeedback) => (
             <SwiperSlide className="mt-28" key={customerFeedback.id}>
               {" "}
-              <div className="relative flex font-roboto items-center justify-between gap-x-10 bg-Yellow">
+              <div className="relative flex flex-col-reverse lg:flex-row font-roboto items-center justify-between gap-x-10 bg-Yellow">
                 {/* Left Side: Testimonial */}
-                <div className="w-2/5 h-full">
-                  <div className="mx-auto md:w-2/3 flex flex-col justify-between gap-y-36">
+                <div className="lg:w-2/5 h-full lg:mt-0 mt-10">
+                  <div className="mx-auto md:w-2/3 px-2 lg:px-0 flex flex-col justify-between lg:gap-y-36">
                     {" "}
                     <div className="text-xl mb-4 flex">
                       <svg
@@ -137,7 +137,7 @@ const CustomersSay = () => {
                       </p>
                     </div>
                     <div>
-                      <div className="mx-5">
+                      <div className="mx-5 mb-5 lg:mb-0">
                         <div className="flex items-center justify-between mt-4">
                           <div>
                             <p className="font-bebas">
@@ -166,7 +166,7 @@ const CustomersSay = () => {
                 </div>
 
                 {/* Right Side: Video with Custom Play Button */}
-                <div className="w-3/5 relative right-0 flex justify-center items-center">
+                <div className="lg:w-3/5 relative right-0 flex justify-center items-center">
                   <video
                     ref={videoRef}
                     className="w-full h-full object-cover"
@@ -195,7 +195,8 @@ const CustomersSay = () => {
                   )}
                 </div>
 
-                <div className="absolute bottom-12">
+                {/* Flower svg */}
+                <div className="absolute hidden lg:block bottom-12">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="40"
@@ -233,10 +234,18 @@ const CustomersSay = () => {
         </Swiper>
       </div>
       {/* Right side image */}
-      <img className="absolute left-0 top-10 z-[-10]" src="221.png" alt="" />
+      <img
+        className="absolute left-0 top-10 z-[-10] hidden lg:block"
+        src="221.png"
+        alt=""
+      />
 
       {/* Left side image */}
-      <img className="absolute right-0 bottom-16 z-[-10]" src="12.png" alt="" />
+      <img
+        className="absolute right-0 bottom-16 z-[-10] hidden lg:block"
+        src="12.png"
+        alt=""
+      />
     </div>
   );
 };

@@ -1,20 +1,24 @@
+import { FaFacebook, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+
 const Footer = () => {
   return (
     <div
-      className="w-full relative min-h-[65vh] bg-cover bg-center text-white py-16"
+      className="lg:w-full relative  h-screen lg:min-h-screen bg-cover bg-center bg-[url('/restaurant-interior.jpg')] text-white py-16"
       style={{
-        backgroundImage: "url('restaurant-interior.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
-      <div className="bg-black py-20 absolute top-0 right-0 font-bebas bg-opacity-80 w-full min-h-[65vh] flex flex-col items-center px-4">
+      <div className="bg-black lg:pt-16 pt-4 absolute top-0 right-0 font-bebas bg-opacity-80 w-full lg:min-h-screen flex flex-col items-center px-4">
         {/* Main Title */}
-        <h2 className="text-[3.875rem] mb-8 text-center">
+        <h2 className="lg:text-[3.875rem] text-4xl lg:mb-8 text-center">
           WE ARE READY TO HAVE YOU THE BEST DINING EXPERIENCES
         </h2>
 
         {/* Contact Information */}
-        <div className="flex items-start container my-12 gap-14 w-full text-center">
-          <div className="text-center min-w-[19.5rem] flex flex-col justify-center items-center">
+        <div className="flex flex-col lg:flex-row lg:items-start justify-evenly container my-5 lg:my-12 gap-x-14 gap-y-2 w-full text-center">
+          <div className="text-center flex flex-col justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
@@ -32,7 +36,7 @@ const Footer = () => {
             <p className="font-roboto text-[#F7F8F9]">Monday - Sunday</p>
             <p className="font-roboto text-[#F7F8F9]">9:00 AM - 11:00 PM</p>
           </div>
-          <div className="text-center min-w-[19.5rem] flex flex-col justify-center items-center">
+          <div className="text-center flex flex-col justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
@@ -50,7 +54,7 @@ const Footer = () => {
             <p className="font-roboto text-[#F7F8F9]">Phone: 1-800-222-4545</p>
             <p className="font-roboto text-[#F7F8F9]">Fax: 1-800-222-4545</p>
           </div>
-          <div className="text-center min-w-[19.5rem] flex flex-col justify-center items-center">
+          <div className="text-center flex flex-col justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
@@ -72,7 +76,7 @@ const Footer = () => {
               Support: support@website.com
             </p>
           </div>
-          <div className="text-center min-w-[19.5rem] flex flex-col justify-center items-center">
+          <div className="text-center flex flex-col justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
@@ -87,31 +91,32 @@ const Footer = () => {
               />
             </svg>
             <h3 className="text-2xl my-2">OUR ADDRESS</h3>
-            <p className="font-roboto text-[#F7F8F9]">
+            <p className="font-roboto max-w-[19.5rem] text-[#F7F8F9]">
               123 Stree New York City , United States Of America.
             </p>
           </div>
         </div>
 
         {/* Social Media Icons */}
-        <div className="flex space-x-4 mt-8">
-          <a href="#" className="text-2xl">
-            <i className="fab fa-facebook"></i>
-          </a>
-          <a href="#" className="text-2xl">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="#" className="text-2xl">
-            <i className="fab fa-instagram"></i>
-          </a>
-          <a href="#" className="text-2xl">
-            <i className="fab fa-youtube"></i>
-          </a>
+
+        <div className="flex text-white text-2xl gap-x-6 mb-10">
+          <div className="border rounded-full p-3 cursor-pointer">
+            <FaFacebook />
+          </div>
+          <div className="border rounded-full p-3 cursor-pointer">
+            <FaSquareXTwitter />
+          </div>
+          <div className="border rounded-full p-3 cursor-pointer">
+            <FaInstagramSquare />
+          </div>
+          <div className="border rounded-full p-3 cursor-pointer">
+            <FaLinkedin />
+          </div>
         </div>
 
         {/* Copyright */}
-        <div className="mt-4 text-center text-sm">
-          © 2023 Niomax All Rights Reserved
+        <div className="mt-4 text-center lg:text-xl text-base font-montserrat">
+          © 2023 <span className="text-Yellow">Niomax</span> All Rights Reserved
         </div>
       </div>
     </div>
